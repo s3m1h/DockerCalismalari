@@ -1,0 +1,6 @@
+from node:14-slim
+workdir /opt/node-server
+copy . .
+run npm install 
+cmd ["node","app.js"];
+

@@ -1,0 +1,5 @@
+from node:14-slim
+workdir /opt/node-app
+copy . .
+env degisken=semih
+cmd ["node","index.js"];

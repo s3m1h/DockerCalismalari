@@ -1,0 +1,5 @@
+FROM php:7-apache
+workdir /var/www/html
+copy . .
+expose 80
+cmd ["/usr/sbin/apache2ctl","-D","FOREGROUND"];

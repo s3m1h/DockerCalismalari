@@ -1,0 +1,10 @@
+from ubuntu:18.04
+run apt-get update
+run apt-get install curl -y
+run curl -sL https://deb.nodesource.com/setup_10.x | bash
+run apt-get install nodejs -y
+copy . /opt/node-app
+env degisken=semih
+#cmd ["node","/opt/node-app/index.js"]
+workdir /opt/node-app
+cmd ["node","index.js"];
